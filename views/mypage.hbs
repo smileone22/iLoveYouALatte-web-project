@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="/">Home</a></li>
+
+    </ul>
+  </div>
+</nav>
+
+
+<div class = "page-header">
+   <h1>
+      {{username}}'s Coffee Shop Diary
+    </h1>
+  </div>
+
+
+<div class="list-group">
+
+  {{#each clist}}
+  <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+    <div class="d-flex w-100 justify-content-between">
+      <h4 class="mb-1">{{cafename}}</h4> <a href={{url}} class="btn pull-right">Read Details</a> 
+       </div>
+       <div class="mb-1">
+    <form action="/mypage-add" method="get">
+    <button type="submit" class="btn btn-outline-warning" name="write" value={{cafename}}>⭐,✍️ </button>
+     <button type="submit" class="btn btn-outline-warning" name="read" value={{cafename}}>📖</button> 
+      </form>
+      </div>
+</a>
+  {{/each}}
+
+
+</div>
+
+</html>

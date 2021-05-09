@@ -1,0 +1,17 @@
+<!doctype html>
+<html>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="../css/bootstrap.min.css" rel="stylesheet" media="all"/>
+<h2>{{cafe.name}}</h2>
+<p>review URL: <a href="{{cafe.reviewurl}}">{{cafe.reviewurl}}</a></p>
+{{#if user.username}}
+<p>Added by: <a href= "/{{user.username}}"> {{user.username}} </a></p>
+{{/if}}
+
+<br>
+<p>  {{cafe.location}}  </p>
+
+
+<script src="js/bootstrap.min.js"></script>
+</html>

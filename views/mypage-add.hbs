@@ -1,0 +1,21 @@
+<form action="/mypage" method="POST">
+
+ <div class="form-group">
+    <label for="exampleFormControlSelect2">Rate🤩{{h}}</label>
+    <select multiple class="form-control" name="star" id="exampleFormControlSelect2" >
+      <option type="checkbox" value="1">⭐</option>
+      <option type="checkbox" value="2">⭐⭐</option>
+      <option type="checkbox" value="3">⭐⭐⭐</option>
+      <option type="checkbox" value="4">⭐⭐⭐⭐</option>
+      <option type="checkbox" value="5">⭐⭐⭐⭐⭐</option>
+    </select>
+  </div>
+
+
+  <div class="form-group">
+    <label for="exampleFormControlTextarea1">✍️Write your experience at {{h}}🐻</label>
+    <textarea class="form-control" name="diary" id="exampleFormControlTextarea1" rows="10"></textarea>
+  </div>
+
+  <button type="submit" class="btn btn-primary" name="review" value={{h}}>Submit</button>
+</form>

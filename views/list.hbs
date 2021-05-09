@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="css/bootstrap.min.css" rel="stylesheet">
+
+
+<div class="alert alert-warning" role="alert">
+  {{message}}
+</div>
+
+{{#each cafes}}
+<div class="card" style="width: 100rem;">
+  <div class="card-body">
+    <h4 class="card-title">{{name}}</h4> 
+    <a href={{reviewurl}} class="card-link">Review</a>
+    <a href='/list/{{slug}}' class="card-link">Details</a>
+
+{{#if loginState }}
+    <form action="" method="post">
+    <button name="add" value="{{slug}}" onSubmit="alert('Successfully added to your page');">Add to my diary</button>
+    </form>
+{{else}}
+    <form action="" method="post">
+    <button name="add" class="btn btn-primary btn-lg active" value="{{slug}}" onSubmit="alert('Pleas log in before you add to your page');" >Add to my diary</button>
+    </form>
+{{/if}}
+  </div>
+</div>
+<br>
+<br>
+{{/each}}
+
+
+{{!-- {{#each cafes}}
+<p>. <a href={{reviewurl}}>{{name}}</a> -[<a href='/list/{{slug}}'>details</a>]</p>
+{{/each}} --}}
+
+
+<br>
+<a href="/list/add" class="btn btn-default">Add a Cafe</a>
+<a href="/mypage" class="btn btn-default">Go to my page</a>
+<a href="/login" class="btn btn-default">Login</a>
+</br>
+
+{{!-- //"http://linserv1.cims.nyu.edu:10630/list/add" --}}
+
+
+</html>

@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="css/bootstrap.min.css" rel="stylesheet">
+
+
+<div class = "page-header">
+   <h1>
+      {{username}}'s Coffee Shop Diary
+    </h1>
+    </div>
+      {{#if header}}
+      <small>{{intro}}</small>
+      {{else}}
+        <form method="POST" action="">
+        	<div>
+		    <label for="intro">Intro:</label>
+		    <input type="text" id="intro" name="intro" value="Short intro of yourself:)">
+	        <input type="submit" value="Enter">
+            </div
+        </form>
+      {{/if}}
+   </div>
+
+
+
+</html>
