@@ -1,5 +1,12 @@
 # Love You A Latte
 
+
+
+<!-- if you used unit testing or functional testing, upload a screen shot or an animated gif of your tests running to the documentation folder of your project; link to it in your form submission
+if you used grunt, gulp, or webpack … or some if you used a pre-processor like babel, sass, etc. … link to the relevant configuration file in your form submission
+if you are using facebook login, and your application is in testing mode, add this user: Eef Aqua so that graders can test your application -->
+
+
 ## Overview
 
 Espresso, americano, latte, mocha, macchiato. affocato! 
@@ -36,7 +43,8 @@ An Example UserSchema:
 ```javascript
 {
   username: "CocoaMocha",
-  hash: // a password hash,
+  email: "cocoa123@gmail.com",
+  password: // a password hash,
   myCafe: // an array of references to List documents
 }
 ```
@@ -54,7 +62,7 @@ An Example List of My List Schema:
 }
 ```
 
-## [Link to Commented First Draft Schema](src/db.js) 
+## [Link to Commented Second Draft Schema](src/db.js) 
 
 
 
@@ -120,22 +128,21 @@ An Example List of My List Schema:
 ├── package.json
 ├── package-lock.json
 ├── documentation
-├── src
-│   ├── app.js
-│   ├── auth.js
-│   ├── db.js
-│   ├── public
-│   │   ├── css
-│   │   └── img 
-│   └── views
-│       ├── login.hbs
-│       ├── register.hbs
-│       ├── list.hbs
-│       ├── list-detail.hbs
-│       ├── list-add.hbs
-│       ├── mylist.hbs
-│       ├── mylist-detail.hbs
-        ...
+├── app.js
+├── auth.js
+├── db.js
+├── public
+├   ├── css
+├   └── img 
+├── views
+    ├── login.hbs
+    ├── register.hbs
+    ├── list.hbs
+    ├── list-detail.hbs
+    ├── list-add.hbs
+    ├── mylist.hbs
+    ├── mylist-detail.hbs
+    ...
 
 
 ```
