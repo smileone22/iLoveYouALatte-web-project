@@ -61,14 +61,12 @@ if (process.env.NODE_ENV === 'PRODUCTION') {
  dbconf = conf.dbconf;
 } else {
  // if we're not in PRODUCTION mode, then use
-//dbconf = 'mongodb://hk2874:cUCtoLL8@class-mongodb.cims.nyu.edu/hk2874';
+//dbconf = PRIVATE 
 
 dbconf='mongodb://localhost/finalprojectconfig';
 }
 
 
  mongoose.connect(dbconf,{useNewUrlParser: true, useUnifiedTopology: true, useFindAndModify: true});
-//mongoose.connect('mongodb://localhost/finalprojectconfig',{ useUnifiedTopology: true });
-// mongoose.connect('mongodb://hk2874:cUCtoLL8@class-mongodb.cims.nyu.edu/hk2874',
-// {useNewUrlParser: true, useUnifiedTopology: true});
+
 
